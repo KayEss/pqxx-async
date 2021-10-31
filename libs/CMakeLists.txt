@@ -1,0 +1,6 @@
+add_subdirectory(coro)
+add_subdirectory(exceptions)
+add_subdirectory(memory)
+add_subdirectory(poll)
+add_subdirectory(pqxx)
+add_subdirectory(test)
