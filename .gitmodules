@@ -1,3 +1,18 @@
 [submodule "libs/test"]
 	path = libs/test
 	url = git@github.com:Felspar/test.git
+[submodule "libs/memory"]
+	path = libs/memory
+	url = git@github.com:Felspar/memory.git
+[submodule "libs/exceptions"]
+	path = libs/exceptions
+	url = git@github.com:Felspar/exceptions.git
+[submodule "libs/coro"]
+	path = libs/coro
+	url = git@github.com:Felspar/coro.git
+[submodule "libs/poll"]
+	path = libs/poll
+	url = git@github.com:Felspar/poll.git
+[submodule "libs/pqxx"]
+	path = libs/pqxx
+	url = git@github.com:jtv/libpqxx.git
