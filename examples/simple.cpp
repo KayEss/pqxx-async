@@ -32,7 +32,7 @@ namespace {
 
 int main() {
     try {
-        felspar::poll::warden ward;
+        felspar::poll::poll_warden ward;
         ward.run(co_main);
         return 0;
     } catch (std::exception const &e) {
