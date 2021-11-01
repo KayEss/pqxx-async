@@ -13,10 +13,10 @@ namespace {
             cn.process();
             if (cn.wait_to_read()) {
                 std::cout << "Waiting for read..." << std::endl;
-                co_await ward.read(cn.sock());
+                co_await ward.read_ready(cn.sock());
             } else if (cn.wait_to_write()) {
                 std::cout << "Waiting for write..." << std::endl;
-                co_await ward.write(cn.sock());
+                co_await ward.write_ready(cn.sock());
             }
         }
         std::cout << "Connected" << std::endl;
