@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+git submodule foreach 'git checkout main || git checkout master'
+git submodule foreach git pull
