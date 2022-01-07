@@ -20,7 +20,7 @@ namespace {
             }
         }
         std::cout << "Connected" << std::endl;
-        co_return cn.produce();
+        co_return std::move(cn).produce();
     }
 
 
