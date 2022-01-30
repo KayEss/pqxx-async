@@ -1,2 +1,2 @@
 add_executable(simple simple.cpp)
-target_link_libraries(simple felspar-poll pqxx)
+target_link_libraries(simple felspar-io pqxx)

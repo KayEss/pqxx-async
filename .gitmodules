@@ -10,9 +10,9 @@
 [submodule "libs/coro"]
 	path = libs/coro
 	url = git@github.com:Felspar/coro.git
-[submodule "libs/poll"]
-	path = libs/poll
-	url = git@github.com:Felspar/poll.git
+[submodule "libs/io"]
+	path = libs/io
+	url = git@github.com:Felspar/io.git
 [submodule "libs/pqxx"]
 	path = libs/pqxx
 	url = git@github.com:jtv/libpqxx.git
