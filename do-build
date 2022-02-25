@@ -4,11 +4,11 @@ time (
         # User specified targets
         ninja -C ./build.tmp/clang-debug $* &&
         # Debug builds
-        ninja -C ./build.tmp/clang-debug all check &&
-        ninja -C ./build.tmp/gcc-debug all check &&
+        ninja -C ./build.tmp/clang-debug all felspar-check felspar-stress &&
+        ninja -C ./build.tmp/gcc-debug all felspar-check felspar-stress &&
         # Release builds
-        ninja -C ./build.tmp/clang-release all check &&
-        ninja -C ./build.tmp/gcc-release all check &&
+        ninja -C ./build.tmp/clang-release all felspar-check felspar-stress &&
+        ninja -C ./build.tmp/gcc-release all felspar-check felspar-stress &&
         true
     ) && (
         find ./examples/ ./libs/ -name \*.\?pp -print | xargs clang-format -i
