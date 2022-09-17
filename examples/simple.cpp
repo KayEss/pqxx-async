@@ -5,7 +5,8 @@
 
 
 namespace {
-    felspar::coro::task<pqxx::connection> do_connect(felspar::io::warden &ward) {
+    felspar::io::warden::task<pqxx::connection>
+            do_connect(felspar::io::warden &ward) {
         std::cout << "Starting connection process..." << std::endl;
         pqxx::connecting cn;
         while (not cn.done()) {
@@ -23,7 +24,7 @@ namespace {
     }
 
 
-    felspar::coro::task<void> co_main(felspar::io::warden &ward) {
+    felspar::io::warden::task<void> co_main(felspar::io::warden &ward) {
         auto cnx = co_await do_connect(ward);
     }
 }
