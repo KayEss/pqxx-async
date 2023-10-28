@@ -11,6 +11,4 @@ time (
         ninja -C ./build.tmp/clang-release all felspar-check felspar-stress &&
         ninja -C ./build.tmp/gcc-release all felspar-check felspar-stress &&
         true
-    ) && (
-        find ./examples/ ./libs/ -name \*.\?pp -print | xargs clang-format -i
     )
