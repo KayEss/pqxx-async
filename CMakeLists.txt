@@ -7,6 +7,6 @@ add_custom_target(felspar-examples)
 add_custom_target(felspar-stress)
 set_property(TARGET felspar-stress PROPERTY EXCLUDE_FROM_ALL TRUE)
 
-add_subdirectory(libs)
+add_subdirectory(lib)
 target_compile_features(pqxx PUBLIC cxx_std_20)
 add_subdirectory(examples)
